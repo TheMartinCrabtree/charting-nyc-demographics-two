@@ -1,3 +1,4 @@
+/*
 const FilterReducer = (state, action) => {
   console.log("action", action);
   switch (action.type) {
@@ -17,3 +18,4 @@ const FilterReducer = (state, action) => {
 };
 
 export default FilterReducer;
+*/

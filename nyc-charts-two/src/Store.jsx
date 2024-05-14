@@ -1,3 +1,4 @@
+/*
 import React, { createContext, useReducer } from "react";
 import FilterReducer from "./reducers/FilterReducer";
 
@@ -5,6 +6,7 @@ import data from "./data";
 import zipcodeKey from "./zipcodes";
 
 const initialState = {
+  neighborhoods: [],
   neighborhood: "",
   allDemoData: data,
   zipcodeKey: zipcodeKey,
@@ -22,3 +24,4 @@ const Store = ({ children }) => {
 export const Context = createContext(initialState);
 
 export default Store;
+*/

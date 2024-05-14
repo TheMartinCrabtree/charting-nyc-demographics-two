@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import GraphContainer from "./GraphContainer";
+// import GraphContainer from "./GraphContainer";
+import DataSelector from "./DataSelector";
+import rawData from "../data";
+import zipcodeKeys from "../zipcodes";
+
+const combinedData = {
+  data: rawData,
+  zips: zipcodeKeys,
+};
 
 // image size 1000x562px
 const LayoutWrapper = styled.div`
@@ -8,11 +16,15 @@ const LayoutWrapper = styled.div`
 `;
 
 const MainContainer = (props) => {
+  const [allData, setAllData] = useState(combinedData);
+  console.log("allData", allData);
+
   return (
     <MainContainer>
       <LayoutWrapper>
         <div>Main Container</div>
-        <GraphContainer />
+        {/* <GraphContainer /> */}
+        <DataSelector />
       </LayoutWrapper>
     </MainContainer>
   );

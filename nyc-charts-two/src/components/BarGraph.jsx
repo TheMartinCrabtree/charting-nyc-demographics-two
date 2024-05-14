@@ -59,7 +59,7 @@ const testData = [
 
 const BarGraph = (props) => {
   return (
-    <div>
+    <ResponsiveContainer>
       <div>Bar Graph</div>
       <BarChart
         width={800}
@@ -88,7 +88,7 @@ const BarGraph = (props) => {
           activeBar={<Rectangle fill="gold" stroke="purple" />}
         />
       </BarChart>
-    </div>
+    </ResponsiveContainer>
   );
 };
 
